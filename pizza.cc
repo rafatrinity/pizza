@@ -16,12 +16,7 @@ public:
 	void setNome(string nome){
 		int tam=nome.size();
 		for (int i = 0; i < tam; i++)
-			nome[i]=tolower(nome[i]);
-		nome[0]=toupper(nome[0]);
-		for (int i = 0; i < tam; i++){
-			if (nome[i]==' ')
-				nome[i+1]=toupper(nome[i+1]);
-		}
+			nome[i]=toupper(nome[i]);
 		this->nome=nome;
 	}
 
@@ -42,6 +37,8 @@ public:
 		tamanho=toupper(tamanho);
 		if(tamanho=='P'||tamanho=='M'||tamanho=='G')
 			this->tamanho=tamanho;
+		else
+			cout<<"valor inválido";
 	}
 
 	string getIngredientes(){
@@ -106,6 +103,7 @@ void exibir(){
 	{
 		cout<<"\nNOME: "<<vp[i].getNome()<<endl;
 		cout<<"PREÇO: "<<vp[i].getPreco()<<endl;
+		cout<<"CÓDIGO: "<<vp[i].getCod()<<endl;
 		cout<<"TAMANHO: "<<vp[i].getTamanho()<<endl;
 		cout<<"INGREDIENTES: "<<vp[i].getIngredientes()<<endl;
 		linha();

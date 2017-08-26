@@ -36,6 +36,6 @@ void menuPesquisar(){
 	cout<<"\t[2] PESQUISAR PELO CÓDIGO //\n";
 	cout<<"\t[3] PESQUISAR POR VALOR $\n";
 	cout<<"\t[0] VOLTAR\n";
-	//cin>>n;
+	cin>>n;
 	//pesquisar(n);
 }

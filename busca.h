@@ -1,8 +1,18 @@
 #ifndef busca
 #define busca
 #include "busca.h"
-#include "stdio.h"
-#include "stdlib.h"
+#include <bits/stdc++.h>
+
+void pesquisar(int n){
+	cab();
+	switch(n){
+		case 1:
+		cout<<"ESCREVA O NOME COMPLETO OU PARTE DELE: ";
+	}
+}
+
+
+
 int kmp(int tam_str, int tam_substr, char* str, char* substr){
 	if (tam_substr<=tam_str)
 	{
