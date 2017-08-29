@@ -24,8 +24,10 @@ void menuExibir(){
 	cout<<"\t[2] EXIBIR PIZZAS ORDENADAS PELO VALOR $\n";
 	cout<<"\t[3] EXIBIR PIZZAS ORDENADAS PELO CÓDIGO //\n";
 	cout<<"\t[0] VOLTAR\n";
-	getchar();
-	exibir();
+	cin>>n;
+	if(!n)
+		menu();		
+	exibir(n);
 }
 
 void menuPesquisar(){
